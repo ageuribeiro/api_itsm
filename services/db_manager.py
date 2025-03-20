@@ -7,7 +7,7 @@ from datetime import datetime
 logging.basicConfig(filename="logs/app.log", level=logging.INFO,
                     format="%(asctime)s - %(levelname)s - %(message)s")
 
-client = MongoClient(CONFIG["MONGODB"]["URL"])
+client = MongoClient(CONFIG["mongodb"]["uri"])
 db = client[CONFIG["mongodb"]["database"]]
 
 

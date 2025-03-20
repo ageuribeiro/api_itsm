@@ -33,6 +33,6 @@ CONFIG = {
 
     },
     "mongodb": {
-        "uri": config["MONGODB"]["URL"]
+        "uri": config["MONGODB"]["uri"]
     }
 }
